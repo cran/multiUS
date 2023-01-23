@@ -5,9 +5,9 @@
 #' statistics).
 #' @param x A data frame or a matrix with the values that correspond to the first set of variables (\eqn{X}-variables).
 #' @param y A data frame or a matrix with the values that correspond to the second set of variables (\eqn{Y}-variables).
-#' @param xcenter Wheter any centering have to be done on the \eqn{x} values before the analysis. If \code{TRUE} (default), subtract the column means. If \code{FALSE}, do not adjust the columns. Otherwise, a vector of values to be subtracted from the columns.
+#' @param xcenter Whether any centring have to be done on the \eqn{x} values before the analysis. If \code{TRUE} (default), subtract the column means. If \code{FALSE}, do not adjust the columns. Otherwise, a vector of values to be subtracted from the columns.
 #' @param ycenter Analogous to \code{xcenter}, but for the \eqn{y} values.
-#' @param useCCApackage Wheter \code{cc} function (from \code{CCA} package) or \code{cancor} function (from \code{stats} package) should be used to obtain canonical correlations.
+#' @param useCCApackage Whether \code{cc} function (from \code{CCA} package) or \code{cancor} function (from \code{stats} package) should be used to obtain canonical correlations.
 #' @return The function returns the same output as functions \code{cancor} or \code{cc} with the following additional elements:
 #' \itemize{
 #' \item \code{$sigTest}
@@ -23,8 +23,8 @@
 #' \item \code{Eigenvalues} - Eigenvalues of the canonical roots.
 #' \item \code{\%} - Proportion of explained variance of correlation.
 #' \item \code{Cum \%} - Cumulative proportion of explained variance of correlation.
-#' \item \code{Cor} - Canonical correlation coeficient.
-#' \item \code{Sq. Cor} - Squared canonical correlation coeficient.
+#' \item \code{Cor} - Canonical correlation coefficient.
+#' \item \code{Sq. Cor} - Squared canonical correlation coefficient.
 #' }
 #' }
 #' @examples

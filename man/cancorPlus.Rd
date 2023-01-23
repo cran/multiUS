@@ -11,11 +11,11 @@ cancorPlus(x, y, xcenter = TRUE, ycenter = TRUE, useCCApackage = FALSE)
 
 \item{y}{A data frame or a matrix with the values that correspond to the second set of variables (\eqn{Y}-variables).}
 
-\item{xcenter}{Wheter any centering have to be done on the \eqn{x} values before the analysis. If \code{TRUE} (default), subtract the column means. If \code{FALSE}, do not adjust the columns. Otherwise, a vector of values to be subtracted from the columns.}
+\item{xcenter}{Whether any centring have to be done on the \eqn{x} values before the analysis. If \code{TRUE} (default), subtract the column means. If \code{FALSE}, do not adjust the columns. Otherwise, a vector of values to be subtracted from the columns.}
 
 \item{ycenter}{Analogous to \code{xcenter}, but for the \eqn{y} values.}
 
-\item{useCCApackage}{Wheter \code{cc} function (from \code{CCA} package) or \code{cancor} function (from \code{stats} package) should be used to obtain canonical correlations.}
+\item{useCCApackage}{Whether \code{cc} function (from \code{CCA} package) or \code{cancor} function (from \code{stats} package) should be used to obtain canonical correlations.}
 }
 \value{
 The function returns the same output as functions \code{cancor} or \code{cc} with the following additional elements:
@@ -33,8 +33,8 @@ The function returns the same output as functions \code{cancor} or \code{cc} wit
 \item \code{Eigenvalues} - Eigenvalues of the canonical roots.
 \item \code{\%} - Proportion of explained variance of correlation.
 \item \code{Cum \%} - Cumulative proportion of explained variance of correlation.
-\item \code{Cor} - Canonical correlation coeficient.
-\item \code{Sq. Cor} - Squared canonical correlation coeficient.
+\item \code{Cor} - Canonical correlation coefficient.
+\item \code{Sq. Cor} - Squared canonical correlation coefficient.
 }
 }
 }

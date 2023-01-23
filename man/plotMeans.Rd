@@ -25,7 +25,7 @@ plotMeans(
 
 \item{by}{Categorical variable that defines groups.}
 
-\item{plotCI}{Wheter to plot condifence intervals or not, default is \code{TRUE}.}
+\item{plotCI}{Whether to plot confidence intervals or not, default is \code{TRUE}.}
 
 \item{alpha}{A confidence level for calculating confidence intervals (default is \code{0.05}).}
 
@@ -33,7 +33,7 @@ plotMeans(
 
 \item{xlab}{The title of \eqn{x}-axis.}
 
-\item{plotLegend}{Wheter to plot a legend or not, default is \code{TRUE}.}
+\item{plotLegend}{Whether to plot a legend or not, default is \code{TRUE}.}
 
 \item{inset}{Inset distance(s) from the margins as a fraction of the plot region when legend is placed by keyword.}
 

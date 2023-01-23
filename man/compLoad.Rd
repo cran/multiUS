@@ -15,7 +15,7 @@ compLoad(L1, L2)
 A list with the following elements:
 \itemize{
 \item \code{err} - Sum of squared differences between the values of \code{L1} and \code{L2} (for the corresponding permuation and signs).
-\item \code{perm} - Permuation of columns of \code{L1} that results in the lowest \code{err} value.
+\item \code{perm} - Permutation of columns of \code{L1} that results in the lowest \code{err} value.
 \item \code{sign} - Signs of factor loadings of \code{L1}. The first value corresponds to the first column of \code{L1} and the second value corresponds to the second column of \code{L1}.
 }
 }

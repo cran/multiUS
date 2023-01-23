@@ -1,20 +1,14 @@
-#' Compute correlations and test their statistical significance
+#' @title Compute correlations and test their statistical significance
 #'
-#' @description The function computes the whole correlation matrix and corresponding sample sizes and \eqn{p}-values.
+#' @description The function computes the whole correlation matrix and corresponding sample sizes and \eqn{p}-values. Print method is also available.
 #' @param X Data matrix with selected variables.
-#' @param method A type of correlation coefitient to be calculated, see function \code{cor}.
+#' @param method A type of correlation coefficient to be calculated, see function \code{cor}.
 #' @param use In the case of missing values, which method should be used, see function \code{cor}.
 #' @param \dots Arguments passed to other functions, see \code{cor.test}.
-#' @return  A list with the following elements:
-#' \itemize{
-#' \item \code{cor} - correlation matrix.
-#' \item \code{p} - a matrix of \eqn{p}-values.
-#' \item \code{n} - a matrix of corresponding sample sizes.
-#' }
 #' @examples
 #' corTestDf(mtcars[, 3:5])
 #' @seealso \code{cor.test}
-#' @author Aleš Žiberna
+#' @author Ales Ziberna
 #' @export
 
 corTestDf<-function(X, method = "p", use = "everything", ...){
@@ -41,5 +35,7 @@ corTestDf<-function(X, method = "p", use = "everything", ...){
       }
     }
   }
-  return(list(cor=corMat,p=pMat,n=nMat))
+  res<-list(cor=corMat,p=pMat,n=nMat)
+  class(res)<-c("corTestDf","list")
+  return(res)
 }

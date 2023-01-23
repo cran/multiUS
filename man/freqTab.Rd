@@ -11,7 +11,7 @@ freqTab(x, dec = 2, cum = TRUE, ...)
 
 \item{dec}{Number of decimal places for percentages.}
 
-\item{cum}{wheter to calculate cummulative frequencies and percentages (default \code{TRUE}).}
+\item{cum}{whether to calculate cumulative frequencies and percentages (default \code{TRUE}).}
 
 \item{\dots}{Arguments passed to function \code{table}.}
 }

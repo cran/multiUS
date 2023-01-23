@@ -3,10 +3,10 @@
 #' @description The function plots the means of several numerical variables by the levels of one categorical variable.
 #' @param x Data frame with values of numeric variables.
 #' @param by Categorical variable that defines groups.
-#' @param plotCI Wheter to plot condifence intervals or not, default is \code{TRUE}.
+#' @param plotCI Whether to plot confidence intervals or not, default is \code{TRUE}.
 #' @param ylab The title of \eqn{y}-axis.
 #' @param xlab The title of \eqn{x}-axis.
-#' @param plotLegend Wheter to plot a legend or not, default is \code{TRUE}.
+#' @param plotLegend Whether to plot a legend or not, default is \code{TRUE}.
 #' @param inset Inset distance(s) from the margins as a fraction of the plot region when legend is placed by keyword.
 #' @param xleg Position of a legend, default is \code{topleft}.
 #' @param legPar Additional parameters for a legend. They have to be provided in a list format.

@@ -2,7 +2,7 @@
 % Please edit documentation in R/toLik.R
 \name{discretize}
 \alias{discretize}
-\title{Transform continous variable to a discrete variable}
+\title{Transform continuous variable to a discrete variable}
 \usage{
 discretize(x, type = "eq", q = 1.5, k = 5, r = range(x), num = TRUE)
 }
@@ -17,13 +17,13 @@ discretize(x, type = "eq", q = 1.5, k = 5, r = range(x), num = TRUE)
 
 \item{r}{Minimum and maximum values to define intervals of \code{x}. Default are minimum and maximum values of \code{x}.}
 
-\item{num}{If \code{TRUE} (default) numberical values are returned, otherwise intervals are returned.}
+\item{num}{If \code{TRUE} (default) numerical values are returned, otherwise intervals are returned.}
 }
 \value{
 Transformed values are organized into a vector.
 }
 \description{
-The function transforms a continous variable to a \eqn{k}-point discrete variable (similar to a Likert-item type variable). Different styles of answering to a survey are possible.
+The function transforms a continuous variable to a \eqn{k}-point discrete variable (similar to a Likert-item type variable). Different styles of answering to a survey are possible.
 }
 \examples{
 x <- rnorm(1000)
